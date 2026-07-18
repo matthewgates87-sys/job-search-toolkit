@@ -26,11 +26,10 @@
   },
   "locations": {
     "_comment": "home_city drives the 'My city' filter. remote_scope is the region you'd take remote roles in (e.g. 'US'). Leave preferred empty [] unless you want to hard-limit the list.",
-    "home_city": "Los Angeles",
+    "home_city": "",
     "remote_scope": "US",
     "preferred": []
   },
-
   "location_filter": {
     "_comment": "Discards irrelevant roles at pull time so they never clutter your list. Keeps ONLY roles that are local (within max_miles of your area) OR remote-US. Set enabled:false to keep everything.",
     "enabled": true,
@@ -38,40 +37,36 @@
     "keep_local": true,
     "keep_remote_us": true
   },
-
   "adzuna": {
     "_comment": "FREE. Broad aggregator, searches by location+radius. Key at developer.adzuna.com (5 min). Leave app_id blank to skip.",
     "app_id": "",
     "app_key": "",
-    "zip": "91020",
+    "zip": "",
     "distance_miles": 50,
     "also_remote": true,
     "max_pages": 5
   },
-
   "usajobs": {
-    "_comment": "FREE. Federal jobs — real roles with real headcount (no phantom postings). Key at developer.usajobs.gov. user_agent must be the email you registered with. Leave api_key blank to skip.",
+    "_comment": "FREE. Federal jobs \u2014 real roles with real headcount (no phantom postings). Key at developer.usajobs.gov. user_agent must be the email you registered with. Leave api_key blank to skip.",
     "api_key": "",
     "user_agent": "",
-    "location": "Los Angeles, California",
+    "location": "",
     "radius_miles": 50,
     "also_remote": true,
     "max_pages": 5
   },
-
   "jooble": {
     "_comment": "FREE. Large aggregator. Request a key at jooble.org/api/about. Leave api_key blank to skip.",
     "api_key": "",
-    "location": "Los Angeles, CA",
+    "location": "",
     "radius_miles": 50,
     "also_remote": true,
     "max_pages": 5
   },
-
   "jsearch": {
     "_comment": "PAID (~$15/mo). Taps Google Jobs = the broadest single source. Key at rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch. Leave api_key blank to skip.",
     "api_key": "",
-    "location": "Los Angeles, CA",
+    "location": "",
     "radius_miles": 50,
     "also_remote": true,
     "max_pages": 3

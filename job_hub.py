@@ -640,7 +640,8 @@ let ROWS=[],STAGES=[],ROLES=[],findSort="fit",findDir=-1,pipeStage="",editId=nul
 let HOME_CITY="",REMOTE_SCOPE="US";
 // City name -> match the city and its close variants (not the whole state,
 // so 'Los Angeles' doesn't pull in every California role).
-// Cities within ~50 miles of Montrose/91020 (Los Angeles metro). A role's
+// Example city table: cities within ~50 miles of the Los Angeles metro.
+// Replace LA_CITY_BANDS with your own metro to adapt this. A role's
 // location matches "my area" if it names any of these, OR names greater-LA /
 // SoCal generally. Kept to SoCal terms so it doesn't catch other states.
 const LA_CITIES={

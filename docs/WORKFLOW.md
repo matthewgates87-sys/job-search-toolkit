@@ -83,7 +83,7 @@ For each:
 
 It returns: which resume variant to use, any red flags, a verdict, and tailored bullets formatted as:
 ```
-REPLACE (1Touch) → "old bullet text"
+REPLACE (Your Current Role) → "old bullet text"
 WITH: "new tailored bullet"
 ```
 
