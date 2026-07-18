@@ -2,7 +2,7 @@
 
 **An AI-assisted job search system that finds roles across the whole market, scores them against your resume, uses Claude to triage them with real judgment, and tailors your resume per application — while preserving your formatting.**
 
-Built by [Matthew Gates](https://www.linkedin.com/in/matthewjgates) to solve a problem in my own job search: the market is full of postings that don't exist, don't fit, or don't pay. Applying at volume only works if you can separate signal from noise fast.
+Built by [Matthew Gates](https://www.linkedin.com/in/matthewgates1) to solve a problem in my own job search: the market is full of postings that don't exist, don't fit, or don't pay. Applying at volume only works if you can separate signal from noise fast.
 
 Runs entirely on your machine. No accounts, no server, no data leaves your computer.
 
