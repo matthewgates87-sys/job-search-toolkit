@@ -1,0 +1,4 @@
+# No third-party packages required.
+# This toolkit deliberately uses only the Python standard library
+# (urllib, json, zipfile, re, http.server) so it runs anywhere
+# Python 3.10+ is installed, with no pip install step.

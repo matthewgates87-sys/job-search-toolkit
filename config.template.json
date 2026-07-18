@@ -1,0 +1,200 @@
+{
+  "_comment": "This is your personal settings file. Everything the tools need is here. Edit it once, and the tools do the rest. Nothing is uploaded anywhere.",
+  "name": "Your Name",
+  "resume_file": "master.docx",
+  "resume_variants": {
+    "_comment": "Reusable resume files for fast applying. Put each .docx in this folder. The apply flow suggests a variant based on the job title, but you can override per role. Leave a filename blank to fall back to resume_file.",
+    "Account Executive": "master.docx",
+    "Solutions Consultant / SE": "master.docx",
+    "Director / Leadership": "master.docx"
+  },
+  "target_roles": {
+    "_comment": "Words that should appear in job titles you want. Keep it broad. These are OR-matched (any one is enough).",
+    "include": [
+      "account executive",
+      "sales",
+      "solutions consultant",
+      "solutions engineer",
+      "business development"
+    ],
+    "exclude": [
+      "software engineer",
+      "data scientist",
+      "recruiter",
+      "designer"
+    ]
+  },
+  "locations": {
+    "_comment": "home_city drives the 'My city' filter. remote_scope is the region you'd take remote roles in (e.g. 'US'). Leave preferred empty [] unless you want to hard-limit the list.",
+    "home_city": "Los Angeles",
+    "remote_scope": "US",
+    "preferred": []
+  },
+
+  "location_filter": {
+    "_comment": "Discards irrelevant roles at pull time so they never clutter your list. Keeps ONLY roles that are local (within max_miles of your area) OR remote-US. Set enabled:false to keep everything.",
+    "enabled": true,
+    "max_miles": 50,
+    "keep_local": true,
+    "keep_remote_us": true
+  },
+
+  "adzuna": {
+    "_comment": "FREE. Broad aggregator, searches by location+radius. Key at developer.adzuna.com (5 min). Leave app_id blank to skip.",
+    "app_id": "",
+    "app_key": "",
+    "zip": "91020",
+    "distance_miles": 50,
+    "also_remote": true,
+    "max_pages": 5
+  },
+
+  "usajobs": {
+    "_comment": "FREE. Federal jobs — real roles with real headcount (no phantom postings). Key at developer.usajobs.gov. user_agent must be the email you registered with. Leave api_key blank to skip.",
+    "api_key": "",
+    "user_agent": "",
+    "location": "Los Angeles, California",
+    "radius_miles": 50,
+    "also_remote": true,
+    "max_pages": 5
+  },
+
+  "jooble": {
+    "_comment": "FREE. Large aggregator. Request a key at jooble.org/api/about. Leave api_key blank to skip.",
+    "api_key": "",
+    "location": "Los Angeles, CA",
+    "radius_miles": 50,
+    "also_remote": true,
+    "max_pages": 5
+  },
+
+  "jsearch": {
+    "_comment": "PAID (~$15/mo). Taps Google Jobs = the broadest single source. Key at rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch. Leave api_key blank to skip.",
+    "api_key": "",
+    "location": "Los Angeles, CA",
+    "radius_miles": 50,
+    "also_remote": true,
+    "max_pages": 3
+  },
+  "work_types": {
+    "_comment": "Which arrangements you'll consider. Options: Remote, Hybrid, On-site.",
+    "accept": [
+      "Remote",
+      "Hybrid",
+      "On-site"
+    ]
+  },
+  "companies": {
+    "_comment": "Mix of national AI/SaaS (remote roles) + LA-area companies (local on-site/hybrid). Many slugs go stale \u2014 run diagnose.py to see which work and prune the 404s. Add your own: the slug is the word in the company's careers URL (boards.greenhouse.io/THIS).",
+    "greenhouse": [
+      "anthropic",
+      "databricks",
+      "scale",
+      "cohere",
+      "runway",
+      "gong",
+      "airtable",
+      "brex",
+      "gusto",
+      "lattice",
+      "twilio",
+      "cloudflare",
+      "robinhood",
+      "coinbase",
+      "stripe",
+      "figma",
+      "asana",
+      "samsara",
+      "verkada",
+      "rippling",
+      "gitlab",
+      "confluent",
+      "datadog",
+      "snowflake",
+      "affirm",
+      "plaid",
+      "dropbox",
+      "reddit",
+      "discord",
+      "benchling",
+      "checkr",
+      "flexport",
+      "servicetitan",
+      "gopuff",
+      "snap",
+      "riotgames",
+      "scopely",
+      "goguardian",
+      "sofi",
+      "faire",
+      "boulevard",
+      "fandom",
+      "clutter",
+      "honey",
+      "goodrx",
+      "dcgone",
+      "verifiedfirst",
+      "picsart",
+      "system1",
+      "nacelle",
+      "tapcart",
+      "papaya",
+      "fabric",
+      "clearcover",
+      "wpromote",
+      "gimletmedia",
+      "sandboxvr",
+      "wheelsup",
+      "signifyd",
+      "bird",
+      "servicetitaninc"
+    ],
+    "lever": [
+      "mistral",
+      "together",
+      "attentive",
+      "netlify",
+      "nerdwallet",
+      "whatnot",
+      "moonpay",
+      "dave",
+      "pipe",
+      "gem",
+      "invoca",
+      "sidebench",
+      "chef-robotics",
+      "pex"
+    ],
+    "ashby": [
+      "openai",
+      "ramp",
+      "vanta",
+      "clay",
+      "decagon",
+      "sierra",
+      "hebbia",
+      "baseten",
+      "modal",
+      "harvey",
+      "sardine",
+      "cursor",
+      "perplexity",
+      "linear",
+      "writer",
+      "statsig",
+      "browserbase",
+      "whatnot",
+      "openstore",
+      "particle41",
+      "flowspace",
+      "afresh",
+      "pathstream",
+      "metropolis",
+      "mindbody"
+    ]
+  },
+  "resume_keywords": {
+    "_comment": "AUTO-FILLED from your resume by setup.py. This is what job postings get scored against. You can edit it, but you usually won't need to.",
+    "text": ""
+  }
+}

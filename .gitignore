@@ -1,0 +1,50 @@
+# ============================================================
+#  NEVER COMMIT THESE — they contain your keys and personal data
+# ============================================================
+
+# Your personal settings — contains API keys!
+config.json
+
+# Your resumes
+*.docx
+*.doc
+*.pdf
+!docs/*.png
+
+# Job search data
+found_roles.json
+applications.json
+verdicts.txt
+review_batch_*.txt
+
+# Generated tailored resumes
+Gates_*.docx
+*_tailored.docx
+
+# The dashboard the old finder produced
+ai-sales-jobs.html
+
+# ============================================================
+#  Standard Python / OS noise
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
